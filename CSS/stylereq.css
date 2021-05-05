@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.42em;
+  color: #ccc9c4;
+  background-color: #1f2739;
+}
+.middle{
+  position: absolute;
+  left:15%;
+  transform: translate(-50%,-50%);
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 30px 18px;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  color: #03e9f4;
+  border: solid;
+}
+
+p {
+  margin : 8px;
+}
+
+#error {
+  text-align: center;
+  color: red;
+  font-size: 40px;
+}
+
+#titre {
+  font-size: 65px;
+  padding: 2%;
+  text-align: center;
+  margin: 70px;
+}
+
+#titre2 {
+  font-size: 30px; 
+  margin-left: 2%;
+  margin: 32px;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1em;
+  text-align: center;
+  color: #4dc3fa;
+}
+
+.container th h1 {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  color: #3c87aa;
+}
+
+.container td {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.container {
+  text-align: center;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+  padding: 0 0 2em 0;
+}
+
+#containerparam {
+  width: 35%;
+  margin: 0 1%;
+}
+
+.container td,
+.container th {
+  padding-bottom: 2%;
+  padding-top: 2%;
+  margin: auto;
+}
+
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+  background-color: #323c50;
+}
+
+/* Background-color of the even rows */
+.container tr:nth-child(even) {
+  background-color: #2c3446;
+}
+
+.container th {
+  background-color: #1f2739;
+}
+
+@media (max-width: 800px) {
+  .container td:nth-child(4),
+  .container th:nth-child(4) {
+    display: none;
+  }
+}
+
+/* modifier.php */
+.modifier td,
+.modifier input {
+  width: 120px;
+  font: 400 15px/16px roboto light;
+}
+
+.modifier input {
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: rgb(88, 86, 86);
+}
+
+#idenvoyer {
+  background-color: #185875;
+  padding: 15px;
+  width: 300px;
+  display: block;
+  margin : auto;
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+}
